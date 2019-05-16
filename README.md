@@ -1,4 +1,4 @@
-TFG Pre build libraries
-=======================
+TFG pre built public libs
+=========================
 
-The idea of this repo is to keep pre-build versions of public libraries that we frequently link against.
+This repo keeps versions of public libraries that are frequently linked against on ios and android builds
