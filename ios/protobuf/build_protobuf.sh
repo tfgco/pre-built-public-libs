@@ -69,14 +69,12 @@ mkdir -p ${DIST_DIR}/{bin,lib}
 cp -r ${TMP_DIR}/armv7s/include ${DIST_DIR}/
 cp ${TMP_DIR}/osx/bin/protoc ${DIST_DIR}/bin/
 ${DEVROOT}/usr/bin/lipo \
-	-arch i386 ${TMP_DIR}/i386/lib/libprotobuf.a \
 	-arch x86_64 ${TMP_DIR}/x86_64/lib/libprotobuf.a \
 	-arch armv7 ${TMP_DIR}/armv7/lib/libprotobuf.a \
 	-arch armv7s ${TMP_DIR}/armv7s/lib/libprotobuf.a \
 	-arch arm64 ${TMP_DIR}/arm64/lib/libprotobuf.a \
 	-output ${DIST_DIR}/lib/libprotobuf.a -create
 ${DEVROOT}/usr/bin/lipo \
-	-arch i386 ${TMP_DIR}/i386/lib/libprotobuf-lite.a \
 	-arch x86_64 ${TMP_DIR}/x86_64/lib/libprotobuf-lite.a \
 	-arch armv7 ${TMP_DIR}/armv7/lib/libprotobuf-lite.a \
 	-arch armv7s ${TMP_DIR}/armv7s/lib/libprotobuf-lite.a \
